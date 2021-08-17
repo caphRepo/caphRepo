@@ -9,4 +9,4 @@ orquestador:
       async-history-concurrent-consumers: 5
     async-executor-number-of-retries: 0
     default-failed-job-wait-time: 2
-    async-failed-job-wait-time: 2
+    async-failed-job-wait-time: 20
