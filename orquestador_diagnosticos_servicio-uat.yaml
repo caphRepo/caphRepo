@@ -1,0 +1,12 @@
+orquestador:
+  engine:
+    mq:
+      enabled: true
+      url: vm://localhost?broker.persistent=false
+      async-queue-name: runtime-jobs
+      async-concurrent-consumers: 5
+      async-history-queue-name: history-jobs
+      async-history-concurrent-consumers: 5
+    async-executor-number-of-retries: 0
+    default-failed-job-wait-time: 2
+    async-failed-job-wait-time: 2
